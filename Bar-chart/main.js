@@ -1,51 +1,51 @@
-let myGraph = document.getElementById("myGraph");
-let trace1 = {};
-trace1.type = "bar";
-trace1.name = "Lion";
-trace1.x = [];
-trace1.y = [];
+let myGraph2 = document.getElementById("myGraph2");
+let HW2_trace1 = {};
+HW2_trace1.type = "bar";
+HW2_trace1.name = "Lion";
+HW2_trace1.x = [];
+HW2_trace1.y = [];
 
-trace1.x[0] = "Taipei Zoo";
-trace1.y[0] = animals_Taipei_Zoo[0]['count'];
-trace1.x[1] = "Taoyuan Zoo";
-trace1.y[1] = animals_Taoyuan_Zoo[0]['count'];
+HW2_trace1.x[0] = "Taipei Zoo";
+HW2_trace1.y[0] = animals_Taipei_Zoo[0]['count'];
+HW2_trace1.x[1] = "Taoyuan Zoo";
+HW2_trace1.y[1] = animals_Taoyuan_Zoo[0]['count'];
 
-trace1.text = trace1.y;
-trace1.textfont = {
+HW2_trace1.text = HW2_trace1.y;
+HW2_trace1.textfont = {
     color: 'white',
     size:20
 };
 
-let trace2 = {};
-trace2.type = "bar";
-trace2.name = "Tiger";
-trace2.x = [];
-trace2.y = [];
+let HW2_trace2 = {};
+HW2_trace2.type = "bar";
+HW2_trace2.name = "Tiger";
+HW2_trace2.x = [];
+HW2_trace2.y = [];
 
-trace2.x[0] = "Taipei Zoo";
-trace2.y[0] = animals_Taipei_Zoo[1]['count'];
-trace2.x[1] = "Taoyuan Zoo";
-trace2.y[1] = animals_Taoyuan_Zoo[1]['count'];
+HW2_trace2.x[0] = "Taipei Zoo";
+HW2_trace2.y[0] = animals_Taipei_Zoo[1]['count'];
+HW2_trace2.x[1] = "Taoyuan Zoo";
+HW2_trace2.y[1] = animals_Taoyuan_Zoo[1]['count'];
 
-trace2.text = trace2.y;
-trace2.textfont = {
+HW2_trace2.text = HW2_trace2.y;
+HW2_trace2.textfont = {
     color: 'white',
     size: 20
 };
 
-let trace3 = {};
-trace3.type = "bar";
-trace3.name = "Monkey";
-trace3.x = [];
-trace3.y = [];
+let HW2_trace3 = {};
+HW2_trace3.type = "bar";
+HW2_trace3.name = "Monkey";
+HW2_trace3.x = [];
+HW2_trace3.y = [];
 
-trace3.x[0] = "Taipei Zoo";
-trace3.y[0] = animals_Taipei_Zoo[2]['count'];
-trace3.x[1] = "Taoyuan Zoo";
-trace3.y[1] = animals_Taoyuan_Zoo[2]['count'];
+HW2_trace3.x[0] = "Taipei Zoo";
+HW2_trace3.y[0] = animals_Taipei_Zoo[2]['count'];
+HW2_trace3.x[1] = "Taoyuan Zoo";
+HW2_trace3.y[1] = animals_Taoyuan_Zoo[2]['count'];
 
-trace3.text = trace3.y;
-trace3.textfont = {
+HW2_trace3.text = HW2_trace3.y;
+HW2_trace3.textfont = {
     color: 'white',
     size: 20
 };
@@ -66,12 +66,12 @@ trace3.textfont = {
 //     trace2.y[i] = animals_Taoyuan_Zoo[i]['count'];
 // }
 
-let data = [];
-data.push(trace1);
-data.push(trace2);
-data.push(trace3);
+let data2 = [];
+data2.push(HW2_trace1);
+data2.push(HW2_trace2);
+data2.push(HW2_trace3);
 
-let layout = {
+let layout2 = {
     margin: {
         t: 50
     },
@@ -79,4 +79,4 @@ let layout = {
     title:'Taipei Zoo VS. Taoyuan Zoo'
 };
 
-Plotly.newPlot(myGraph, data, layout);
+Plotly.newPlot(myGraph2, data2, layout2);

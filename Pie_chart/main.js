@@ -1,74 +1,74 @@
-let myGraph = document.getElementById('myGraph');
+let myGraph3 = document.getElementById('myGraph3');
 
-let trace1 = {};
-trace1.type = 'pie';
-trace1.title = "機器學習概論";
-trace1.hole =0.5;
-trace1.labels = [];
-trace1.values = [];
-trace1.domain = {
+let HW3_trace1 = {};
+HW3_trace1.type = 'pie';
+HW3_trace1.title = "機器學習概論";
+HW3_trace1.hole =0.5;
+HW3_trace1.labels = [];
+HW3_trace1.values = [];
+HW3_trace1.domain = {
     row:0,
     column:0
 };
 
 for (let x=0;x<evaluation_ratio_1.length; x++){
-    trace1.labels[x] = evaluation_ratio_1[x]['name'];
-    trace1.values[x] = evaluation_ratio_1[x]['count'];
+    HW3_trace1.labels[x] = evaluation_ratio_1[x]['name'];
+    HW3_trace1.values[x] = evaluation_ratio_1[x]['count'];
 }
 
-let trace2 = {};
-trace2.type = 'pie';
-trace2.title = "資料視覺化";
-trace2.hole = 0.5;
-trace2.labels = [];
-trace2.values = [];
-trace2.domain = {
+let HW3_trace2 = {};
+HW3_trace2.type = 'pie';
+HW3_trace2.title = "資料視覺化";
+HW3_trace2.hole = 0.5;
+HW3_trace2.labels = [];
+HW3_trace2.values = [];
+HW3_trace2.domain = {
     row:0,
     column:1
 };
 
 for (let x=0; x<evaluation_ratio_2.length; x++){
-    trace2.labels[x] = evaluation_ratio_2[x]['name'];
-    trace2.values[x] = evaluation_ratio_2[x]['count'];
+    HW3_trace2.labels[x] = evaluation_ratio_2[x]['name'];
+    HW3_trace2.values[x] = evaluation_ratio_2[x]['count'];
 }
 
-let trace3 = {};
-trace3.type = 'pie';
-trace3.title = "人工智慧與永續發展";
-trace3.labels = [];
-trace3.values = [];
-trace3.domain = {
+let HW3_trace3 = {};
+HW3_trace3.type = 'pie';
+HW3_trace3.title = "人工智慧與永續發展";
+HW3_trace3.labels = [];
+HW3_trace3.values = [];
+HW3_trace3.domain = {
     row:1,
     column:0
 };
 
 for (let x=0; x<evaluation_ratio_3.length; x++){
-    trace3.labels[x] = evaluation_ratio_3[x]['name'];
-    trace3.values[x] = evaluation_ratio_3[x]['count'];
+    HW3_trace3.labels[x] = evaluation_ratio_3[x]['name'];
+    HW3_trace3.values[x] = evaluation_ratio_3[x]['count'];
 }
 
-let trace4 = {};
-trace4.type = 'pie';
-trace4.title = "Python程式設計";
-trace4.labels = [];
-trace4.values = [];
-trace4.domain = {
+let HW3_trace4 = {};
+HW3_trace4.type = 'pie';
+HW3_trace4.title = "Python程式設計";
+HW3_trace4.labels = [];
+HW3_trace4.values = [];
+HW3_trace4.domain = {
     row:1,
     column:1
 };
 
 for (let x=0; x<evaluation_ratio_4.length; x++){
-    trace4.labels[x] = evaluation_ratio_4[x]['name'];
-    trace4.values[x] = evaluation_ratio_4[x]['count'];
+    HW3_trace4.labels[x] = evaluation_ratio_4[x]['name'];
+    HW3_trace4.values[x] = evaluation_ratio_4[x]['count'];
 }
 
-let data =[];
-data.push(trace1);
-data.push(trace2);
-data.push(trace3);
-data.push(trace4);
+let data3 =[];
+data3.push(HW3_trace1);
+data3.push(HW3_trace2);
+data3.push(HW3_trace3);
+data3.push(HW3_trace4);
 
-let layout ={
+let layout3 ={
     margin:{
         t:10,
         l:0,
@@ -78,4 +78,4 @@ let layout ={
         columns:2
     }
 };
-Plotly.newPlot(myGraph, data, layout);
+Plotly.newPlot(myGraph3, data3, layout3);
