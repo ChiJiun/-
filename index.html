@@ -18,6 +18,7 @@
 						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
 						<a href="#work2" class="icon solid fa-folder"><span>Work2</span></a>
 						<a href="#work3" class="icon solid fa-folder"><span>work3</span></a>
+						<a href="#work4" class="icon solid fa-folder"><span>work4</span></a>
 						<!--a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a-->
 					</nav>
@@ -64,9 +65,22 @@
 									<h2>Pie Chart</h2>
 								</header>
 								<p>
-								110年度壽險業被保險人死亡原因
+								110年度壽險業被保險人死亡原因<br>
+								使用D3讀取"death.csv"，並使利用map函數來提取標籤與數值<br>
+								抓取不同4筆資料對各種死亡原因的關係繪製圓餅圖<br>
+								由於一開始四張圖大小不同且重疊在一起，我設定了每張圖的x軸與y軸的位置分布
 								</p>
 								<div id="myGraph3"></div>
+							</article>
+
+							<article id="work4" class="panel">
+								<header>
+									<h2>Histogram</h2>
+								</header>
+								<p>
+								XXXX
+								</p>
+								<div id="myGraph4"></div>
 							</article>
 
 						<!-- Contact -->
@@ -115,13 +129,15 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="//unpkg.com/d3"></script>
-			<script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
-	        <script src="Line_and_Scatter/data.js"></script>
-    	    <script src="Line_and_Scatter/main.js"></script>
-			<script src="Pie_chart/data.js"></script>
-			<script src="Pie_chart/main.js"></script>
-			<script src="Bar-chart/data.js"></script>
-			<script src="Bar-chart/main.js"></script>
+			<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+	        <script src="hw1_Line_and_Scatter/data.js"></script>
+    	    <script src="hw1_Line_and_Scatter/main.js"></script>
+			<script src="hw2_Bar_chart/data.js"></script>
+			<script src="hw2_Bar_chart/main.js"></script>
+			<script src="hw3_Pie_chart/data.js"></script>
+			<script src="hw3_Pie_chart/main.js"></script>
+			<script src="hw4_Histogram/data.js"></script>
+			<script src="hw4_Histogram/main.js"></script>
 
 	</body>
 </html>
