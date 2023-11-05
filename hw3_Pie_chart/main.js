@@ -58,8 +58,8 @@ function drawPieChart(data) {
                 l: 0, // 調整左邊距
             },
             title: '死亡原因分布',
-            grid: {rows: 2, columns: 2}, // 將畫布分為2行2列，獨立的子圖
-            subplot_titles: ['人數-合計', '給付金額-合計', '人數-男', '人數-女'], // 子圖的標題'
+            grid: {rows: 2, columns: 2}, // 將圖形分為2行2列
+            subplot_titles: ['人數-合計', '給付金額-合計', '人數-男', '人數-女'], // 子圖的標題
             height: 600,
             width: 800
         };
