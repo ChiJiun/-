@@ -79,7 +79,7 @@ function drawPieChart(data) {
                 yref: 'paper',
                 x: 0.5,
                 y: 0.4,
-                text: '各死亡原因男女人數分計', // 第二个子图下方的描述
+                text: '各死亡原因男女人數分計',
                 showarrow: false,
                 font: {
                     size: 12,
