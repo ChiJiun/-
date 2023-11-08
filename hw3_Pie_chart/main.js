@@ -48,6 +48,46 @@ function drawPieChart(data) {
             hole:0.5
         };
 
+        // 設定子圖下方描述
+        let annotations = [
+            {
+                xref: 'paper',
+                yref: 'paper',
+                x: 0.075,
+                y: 0.55,
+                text: '各死亡原因總人數合計',
+                showarrow: false,
+                font: {
+                    size: 12,
+                    color: 'black'
+                }
+            },
+            {
+                xref: 'paper',
+                yref: 'paper',
+                x: 0.8,
+                y: 0.55,
+                text: '各死亡原因所給付金額<br>（可能與保險額度有關）',
+                showarrow: false,
+                font: {
+                    size: 12,
+                    color: 'black'
+                }
+            },
+            {
+                xref: 'paper',
+                yref: 'paper',
+                x: 0.5,
+                y: 0.4,
+                text: '各死亡原因男女人數分計', // 第二个子图下方的描述
+                showarrow: false,
+                font: {
+                    size: 12,
+                    color: 'black'
+                }
+            }
+        ];
+
         // 將資料放入陣列
         let Data3 = [data1, data2, data3, data4];
 
@@ -61,7 +101,8 @@ function drawPieChart(data) {
             grid: {rows: 2, columns: 2}, // 將圖形分為2行2列
             subplot_titles: ['人數-合計', '給付金額-合計', '人數-男', '人數-女'], // 子圖的標題
             height: 600,
-            width: 800
+            width: 800,
+            annotations: annotations
         };
         
 
