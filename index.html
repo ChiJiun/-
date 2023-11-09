@@ -44,11 +44,15 @@
 									<h2>Line & Scatter</h2>
 								</header>
 								<p>
-								國內半導體相關產業公司過去一年月營業收入資料<br>
+								國內半導體相關產業公司過去一年月營業收入資料								<br>製作方法說明：<br>
 								原先以為x軸要輸入數值，這份資料是以年月時間做為橫軸，
 								以數值輸入會導致2022 12與2023 01有極大的間斷，後來直接將x軸改成字串就沒問題了。
 								</p>
 								<div id="myGraph"></div>
+								<p>
+								資料來源：
+								<br>公開資訊觀測站 https://mops.twse.com.tw/mops/web/t146sb05
+								</p>
 							</article>
 
 							<article id="work2" class="panel">
@@ -56,11 +60,16 @@
 									<h2>Bar Chart</h2>
 								</header>
 								<p>
-								桃園各地區三大交通事故累積次數<br>
+								桃園各地區三大交通事故累積次數
+								<br>製作方法說明：<br>
 								我將"桃園交通事故.csv"的資料整理出最大的三個原因，<br>
 								使用map函數讀取data.js中的count作為y軸數值，並繪製成長條疊圖。
 								</p>
 								<div id="myGraph2"></div>
+								<p>
+								資料來源：
+								<br>政府資料開放平台 https://data.gov.tw/dataset/46313
+								</p>
 							</article>
 
 							<article id="work3" class="panel">
@@ -68,13 +77,18 @@
 									<h2>Pie Chart</h2>
 								</header>
 								<p>
-								110年度壽險業被保險人死亡原因<br>
-								使用D3讀取"death.csv"，並使利用map函數來提取標籤與數值，<br>
+								110年度壽險業被保險人死亡原因
+								<br>製作方法說明：
+								<br>使用D3讀取"death.csv"，並使利用map函數來提取標籤與數值，<br>
 								抓取不同4筆資料對各種死亡原因的關係繪製圓餅圖，<br>
 								由於一開始四張圖大小不同且重疊在一起，我設定了每張圖的x軸與y軸的位置分布，<br>
 								最後用subplot_titles設定子圖的標題，以annotation新增對子圖的描述。<br>
 								</p>
 								<div id="myGraph3"></div>
+								<p>
+								資料來源：
+								<br>政府資料開放平台 https://data.gov.tw/dataset/160174
+								</p>
 							</article>
 
 							<article id="work4" class="panel">
